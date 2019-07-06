@@ -1,0 +1,8 @@
+<div *ngIf="loaded">
+  <h2>Edit apartment</h2>
+  <apartment-form [(apartment)]="apartment"></apartment-form>
+  <div class="form-group">
+    <input type="button" value="Save" (click)="save()" class="btn btn-success" />
+  </div>
+</div>
+<a routerLink="/" class="nav-link">Back to list</a>

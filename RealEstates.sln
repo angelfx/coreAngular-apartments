@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Abstract", "RealEstates.Abstract\RealEstates.Abstract.csproj", "{F59B595E-548D-4024-83CD-F548BAFC28D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Entities", "RealEstates.Entities\RealEstates.Entities.csproj", "{4FBFABF9-1E57-414A-94D0-324F1FCDFDC7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.BLL", "RealEstates.BLL\RealEstates.BLL.csproj", "{D1BE6EEA-C763-4731-B730-13023BB74826}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.DAL.LocalDB", "RealEstates.DAL.LocalDB\RealEstates.DAL.LocalDB.csproj", "{D04503DF-BF8E-4C1A-9A5F-EE4BB8A371B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Models", "RealEstates.Models\RealEstates.Models.csproj", "{0BF49400-3177-40B9-8631-35C7AA9DC9C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularApp2", "AngularApp2\AngularApp2.csproj", "{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F59B595E-548D-4024-83CD-F548BAFC28D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59B595E-548D-4024-83CD-F548BAFC28D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59B595E-548D-4024-83CD-F548BAFC28D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59B595E-548D-4024-83CD-F548BAFC28D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBFABF9-1E57-414A-94D0-324F1FCDFDC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBFABF9-1E57-414A-94D0-324F1FCDFDC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBFABF9-1E57-414A-94D0-324F1FCDFDC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBFABF9-1E57-414A-94D0-324F1FCDFDC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BE6EEA-C763-4731-B730-13023BB74826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BE6EEA-C763-4731-B730-13023BB74826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BE6EEA-C763-4731-B730-13023BB74826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BE6EEA-C763-4731-B730-13023BB74826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04503DF-BF8E-4C1A-9A5F-EE4BB8A371B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04503DF-BF8E-4C1A-9A5F-EE4BB8A371B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04503DF-BF8E-4C1A-9A5F-EE4BB8A371B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04503DF-BF8E-4C1A-9A5F-EE4BB8A371B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BF49400-3177-40B9-8631-35C7AA9DC9C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF49400-3177-40B9-8631-35C7AA9DC9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF49400-3177-40B9-8631-35C7AA9DC9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF49400-3177-40B9-8631-35C7AA9DC9C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A54B7E6-823E-4971-A945-BDA7BA77550B}
+	EndGlobalSection
+EndGlobal
