@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using RealEstates.Entities;
-using RealEstates.Abstract;
+﻿using RealEstates.Abstract;
 using RealEstates.Abstract.Logic;
+using RealEstates.BLL.Helpers;
+using System;
 using System.IO;
 using System.Linq;
-//using Microsoft.EntityFrameworkCore;
-using RealEstates.BLL.Helpers;
+using System.Text;
 
 namespace RealEstates.BLL.Logic
 {
@@ -42,13 +39,10 @@ namespace RealEstates.BLL.Logic
                             res.AppendLine($"В строке не совпадает количество столбцов. Необходимо 14, обнаружено {arr.Length}. Строка: 'line'");
                         }
 
-                        EntityParser.array = arr;
-                        var apartment = EntityParser.ParseApartment();
-                        var building = EntityParser.ParseBuilding();
-                        var district = EntityParser.ParseDistrict();
-                        var region = EntityParser.ParseRegion();
-
-                        //var item = db.Regions.FirstOrDefault(x => x.IdRegion == 444);
+                        var apartment = EntityParser.ParseApartment(arr);
+                        var building = EntityParser.ParseBuilding(arr);
+                        var district = EntityParser.ParseDistrict(arr);
+                        var region = EntityParser.ParseRegion(arr);
 
                         if (db.Regions.Any(x => x.IdRegion == region.IdRegion))
                             region = db.Regions.First(x => x.IdRegion == region.IdRegion);

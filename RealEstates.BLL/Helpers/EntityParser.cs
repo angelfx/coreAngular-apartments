@@ -7,73 +7,60 @@ namespace RealEstates.BLL.Helpers
 {
     public static class EntityParser
     {
-        private static string[] _array;
-
-        public static string[] array
+        public static Apartment ParseApartment(string[] array)
         {
-            get { return _array; }
-            set
-            {
-                if (value.Length != 14)
-                    throw new ArgumentException("Длина массива не равна 14");
-                _array = value;
-            }
-        }
-
-        public static Apartment ParseApartment()
-        {
-            if (_array == null || _array.Length < 14)
+            if (array == null || array.Length < 14)
                 return null;
 
             Apartment apartment = new Apartment
             {
-                IdApartment = int.Parse(_array[0]),
-                CommonArea = float.Parse(_array[10].Replace('.',',')),
-                Cost = float.Parse(_array[13].Replace('.', ',')),
-                Floor = int.Parse(_array[12]),
-                KitchenArea = float.Parse(_array[11].Replace('.', ',')),
-                QuantitiesOfRooms = int.Parse(_array[9])
+                IdApartment = int.Parse(array[0]),
+                CommonArea = float.Parse(array[10].Replace('.',',')),
+                Cost = float.Parse(array[13].Replace('.', ',')),
+                Floor = int.Parse(array[12]),
+                KitchenArea = float.Parse(array[11].Replace('.', ',')),
+                QuantitiesOfRooms = int.Parse(array[9])
             };
             return apartment;
         }
 
-        public static Building ParseBuilding()
+        public static Building ParseBuilding(string[] array)
         {
-            if (_array == null || _array.Length < 14)
+            if (array == null || array.Length < 14)
                 return null;
 
             Building building = new Building
             {
-                IdBuilding = int.Parse(_array[1]),
-                BuildingNumber = _array[4],
-                NameRC = _array[2],
-                QueueNumber = int.Parse(_array[3])
+                IdBuilding = int.Parse(array[1]),
+                BuildingNumber = array[4],
+                NameRC = array[2],
+                QueueNumber = int.Parse(array[3])
             };
             return building;
         }
 
-        public static District ParseDistrict()
+        public static District ParseDistrict(string[] array)
         {
-            if (_array == null || _array.Length < 14)
+            if (array == null || array.Length < 14)
                 return null;
 
             District district = new District
             {
-                IdDistrict = int.Parse(_array[7]),
-                Title = _array[8]
+                IdDistrict = int.Parse(array[7]),
+                Title = array[8]
             };
             return district;
         }
 
-        public static Region ParseRegion()
+        public static Region ParseRegion(string[] array)
         {
-            if (_array == null || _array.Length < 14)
+            if (array == null || array.Length < 14)
                 return null;
 
             Region region = new Region
             {
-                IdRegion = int.Parse(_array[5]),
-                Title = _array[6]
+                IdRegion = int.Parse(array[5]),
+                Title = array[6]
             };
             return region;
         }
