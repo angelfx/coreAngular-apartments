@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RealEstates.Abstract\RealEstates.Abstract.csproj" />
+    <ProjectReference Include="..\RealEstates.BLL\RealEstates.BLL.csproj" />
+    <ProjectReference Include="..\RealEstates.DAL.LocalDB\RealEstates.DAL.LocalDB.csproj" />
+    <ProjectReference Include="..\RealEstates.Models\RealEstates.Models.csproj" />
+  </ItemGroup>
+
+</Project>

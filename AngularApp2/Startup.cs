@@ -30,7 +30,7 @@ namespace AngularApp2
             string con = Configuration.GetConnectionString("DefaultConnection");
             
             services.AddDbContext<IDALContext, RealEstateContext>(options => options.UseSqlServer(con));
-            services.AddTransient<IRealEstateService, RealEstatesService>();
+            services.AddScoped<IRealEstateService, RealEstatesService>();
             services.AddTransient<IApartmentsImport, ApartmentsFileImport>();
 
             services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
@@ -63,6 +63,7 @@ namespace AngularApp2
 
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
+            app.UseCors("MyPolicy");
 
             app.UseMvc(routes =>
             {
