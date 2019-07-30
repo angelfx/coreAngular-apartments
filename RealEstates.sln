@@ -13,9 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.DAL.LocalDB", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.Models", "RealEstates.Models\RealEstates.Models.csproj", "{0BF49400-3177-40B9-8631-35C7AA9DC9C5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularApp2", "AngularApp2\AngularApp2.csproj", "{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealEstates.WebApi", "RealEstates.WebApi\RealEstates.WebApi.csproj", "{966287FC-CA11-42ED-86E5-A4F1DC55614A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RealEstates.WebApi", "RealEstates.WebApi\RealEstates.WebApi.csproj", "{966287FC-CA11-42ED-86E5-A4F1DC55614A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +41,6 @@ Global
 		{0BF49400-3177-40B9-8631-35C7AA9DC9C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BF49400-3177-40B9-8631-35C7AA9DC9C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BF49400-3177-40B9-8631-35C7AA9DC9C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F31F0424-F7DB-4F01-91EA-EEFFD38918FD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{966287FC-CA11-42ED-86E5-A4F1DC55614A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{966287FC-CA11-42ED-86E5-A4F1DC55614A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{966287FC-CA11-42ED-86E5-A4F1DC55614A}.Release|Any CPU.ActiveCfg = Release|Any CPU

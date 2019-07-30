@@ -12,9 +12,11 @@
     "importHelpers": true,
     "target": "es2015",
     "types": [
+      "jest",
       "node"
     ],
     "typeRoots": [
+      "node_modules/@jest",
       "node_modules/@types"
     ],
     "lib": [
